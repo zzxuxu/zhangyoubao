@@ -1,0 +1,59 @@
+{
+  "code" : 200,
+  "data" : {
+    "is_closable" : "1",
+    "is_closed" : "0",
+    "list" : [
+      {
+        "id" : "190",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/4bd/30b/269/bc4at7Rfg.jpg",
+        "redirect_data" : "3097169166004505523",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "185",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/534/81e/b8a/d2asAgO5t.jpg",
+        "redirect_data" : "3097240631223635410",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "186",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/d3c/00c/42c/e86GVBWe_.jpg",
+        "redirect_data" : "3097241745648109727",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "178",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/e44/e4c/7d9/88dxLHjKu.jpg",
+        "redirect_data" : "3095763954586994719",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "188",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/a9b/9f8/67a/f44UTl5R3.jpg",
+        "redirect_data" : "3097240383904402724",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "187",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/0bb/9c6/358/48cwXgZFy.jpg",
+        "redirect_data" : "3097240168423729757",
+        "redirect_type" : "3"
+      },
+      {
+        "id" : "176",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/0bf/3f1/eba/8f1DWP3M~.jpg",
+        "redirect_data" : "3098247631252343012",
+        "redirect_type" : "5"
+      },
+      {
+        "id" : "37",
+        "image_url" : "http://avatar.zhangyoubao.com/dnf/ad/a91/94b/b2d/1c2lwW2d9.jpg",
+        "redirect_data" : "http://m.zhangyoubao.com/down/index",
+        "redirect_type" : "2"
+      }
+    ]
+  },
+  "list_size" : 10,
+  "message" : "OK"
+}

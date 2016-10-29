@@ -1,0 +1,27 @@
+[
+ {
+     "ctrlname":"RecommendViewController",
+     "image":"首页-推荐",
+     "title":"推荐"
+ },
+ {
+     "ctrlname":"DiscoveryViewController",
+     "image":"首页-发现",
+     "title":"发现"
+ },
+ {
+     "ctrlname":"GroundViewController",
+     "image":"首页-广场",
+     "title":"广场"
+ },
+ {
+     "ctrlname":"MessageViewController",
+     "image":"首页-消息",
+     "title":"消息"
+ },
+ {
+     "ctrlname":"ProfileViewController",
+     "image":"首页-个人",
+     "title":"个人"
+ }
+ ]
