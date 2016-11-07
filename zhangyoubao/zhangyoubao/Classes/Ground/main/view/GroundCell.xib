@@ -190,7 +190,7 @@
                 <outlet property="UserRole" destination="qRg-Ml-sZ0" id="bMJ-Bk-hO8"/>
                 <outlet property="UserSex" destination="2En-19-FHu" id="MEh-JP-ejW"/>
             </connections>
-            <point key="canvasLocation" x="-683.5" y="295"/>
+            <point key="canvasLocation" x="-892.5" y="284"/>
         </tableViewCell>
     </objects>
     <resources>

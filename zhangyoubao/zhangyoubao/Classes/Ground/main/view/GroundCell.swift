@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GroundCell: UITableViewCell {
 
@@ -32,6 +33,10 @@ class GroundCell: UITableViewCell {
 
     @IBAction func ClickBtn(sender: UIButton) {
     }
+
+    var picUrl: String?
+
+    var picture: UIImageView?
 
     var zoomView: YSZoomView?
     
@@ -59,7 +64,12 @@ class GroundCell: UITableViewCell {
         // 将坐标转化成keywindow坐标系下的坐标
         let imageViewFrame = SendPicture.convertRect(self.SendPicture.frame, toView: UIApplication.sharedApplication().keyWindow)
         zoomView?.originFrame = imageViewFrame
-        zoomView?.image = self.SendPicture!.image
+        if picUrl == "albums_default"{
+            zoomView?.image = UIImage(named: picUrl!)
+        }else {
+            zoomView?.image = UIImage(data: NSData(contentsOfURL: NSURL(string: picUrl!)!)!)
+        }
+        print(picUrl)
         zoomView?.show()
     }
 

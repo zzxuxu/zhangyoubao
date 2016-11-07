@@ -37,9 +37,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-fi-90Q">
-                        <rect key="frame" x="140" y="97" width="50" height="12"/>
+                        <rect key="frame" x="140" y="97" width="60" height="12"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="G9W-35-t8I"/>
+                            <constraint firstAttribute="width" constant="60" id="G9W-35-t8I"/>
                             <constraint firstAttribute="height" constant="12" id="oly-oY-ulz"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>

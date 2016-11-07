@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ProfileViewController: BaseViewController {
+class ProfileViewController: BaseViewController, NavigationProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        addBackgroundImage()
+        addTitle("我的")
 
         // Do any additional setup after loading the view.
     }

@@ -148,7 +148,19 @@ class RecommendNewestViewController: BaseViewController,UITableViewDelegate, UIT
         let cell = tableView.dequeueReusableCellWithIdentifier("recommendCellId", forIndexPath: indexPath) as! RecommendCell
         let model = dataArray[indexPath.row]
         cell.appTitle.text = model.data[indexPath.row].title
-        cell.appTime.text = "\((model.data[indexPath.row].create_time)!)"
+
+        let dateNow = NSDate()
+        let curTime = dateNow.timeIntervalSince1970
+        let timePass = curTime - Double(model.data[indexPath.row].publish_time!)
+
+        if timePass/3600 >= 24 {
+            cell.appTime.text = "\(Int(timePass)/3600/24)天前"
+        }else if timePass/3600 < 24 && timePass/3600 > 1 {
+            cell.appTime.text = "\(Int(timePass)/3600)小时前"
+        }else if timePass/3600 < 1 {
+            cell.appTime.text = "\(Int(timePass)/60)分钟前"
+        }
+
         cell.appComment.text = "\((model.data[indexPath.row].comment_count)!)评"
         cell.appVideoPic.image = UIImage(named: "推荐-视频图标")
         let url = model.data[indexPath.row].recommend_covers![0]

@@ -36,7 +36,7 @@ class GroundViewController: BaseViewController, NavigationProtocol {
     var momentModel = GroundModel()
     var focusModel = GroundModel()
 
-    var segmentTitles = ["热门","此刻","关注"]
+    private var segmentTitles = ["热门","此刻","关注"]
 
     override func viewDidLoad() {
         loadHotData(groundHotUrl, params: paramHot)
@@ -214,13 +214,6 @@ class GroundViewController: BaseViewController, NavigationProtocol {
         
     }
 
-
-    func configUI(tableView:UITableView){
-        addSegment(segmentTitles)
-        addBackgroundImage()
-        view.backgroundColor = UIColor.whiteColor()
-
-    }
 
 
 //    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

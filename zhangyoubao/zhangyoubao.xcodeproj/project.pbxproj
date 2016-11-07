@@ -52,7 +52,6 @@
 		215E23841DBA0E7200C98F47 /* 首页-消息点击@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 215E236D1DBA0E7200C98F47 /* 首页-消息点击@3x.png */; };
 		215E23861DBA0EA400C98F47 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E23851DBA0EA400C98F47 /* BaseViewController.swift */; };
 		215E23881DBA0F3C00C98F47 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E23871DBA0F3C00C98F47 /* DiscoveryViewController.swift */; };
-		215E238C1DBA0FBF00C98F47 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E238B1DBA0FBF00C98F47 /* MessageViewController.swift */; };
 		215E238E1DBA0FDC00C98F47 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E238D1DBA0FDC00C98F47 /* ProfileViewController.swift */; };
 		215E23921DBA106000C98F47 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E23911DBA106000C98F47 /* Const.swift */; };
 		215E23941DBA108E00C98F47 /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E23931DBA108E00C98F47 /* UIView+Common.swift */; };
@@ -127,8 +126,11 @@
 		21F2753E1DC34C2A000DF8E8 /* RecommendStrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2753D1DC34C2A000DF8E8 /* RecommendStrategyViewController.swift */; };
 		21F275401DC34C44000DF8E8 /* RecommendVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2753F1DC34C43000DF8E8 /* RecommendVideoViewController.swift */; };
 		21F4548E1DCCAF0700A8F9E4 /* BaseBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4548D1DCCAF0700A8F9E4 /* BaseBarViewController.swift */; };
-		21F454901DCCB51500A8F9E4 /* GroundFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4548F1DCCB51500A8F9E4 /* GroundFocusView.swift */; };
 		21FE73EC1DD051EA00765181 /* YSZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE73EB1DD051EA00765181 /* YSZoomView.swift */; };
+		21FE73F21DD06D3B00765181 /* GroundFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE73F11DD06D3B00765181 /* GroundFocusView.swift */; };
+		21FE73F41DD06FB500765181 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE73F31DD06FB500765181 /* MessageViewController.swift */; };
+		21FE73F61DD0717B00765181 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE73F51DD0717B00765181 /* MessageView.swift */; };
+		21FE73F81DD0719100765181 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE73F71DD0719100765181 /* FriendView.swift */; };
 		21FFDE181DBA087C00B6CDE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFDE171DBA087C00B6CDE8 /* AppDelegate.swift */; };
 		21FFDE1A1DBA087C00B6CDE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFDE191DBA087C00B6CDE8 /* ViewController.swift */; };
 		21FFDE1D1DBA087C00B6CDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFDE1B1DBA087C00B6CDE8 /* Main.storyboard */; };
@@ -202,7 +204,6 @@
 		215E236D1DBA0E7200C98F47 /* 首页-消息点击@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页-消息点击@3x.png"; sourceTree = "<group>"; };
 		215E23851DBA0EA400C98F47 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		215E23871DBA0F3C00C98F47 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
-		215E238B1DBA0FBF00C98F47 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		215E238D1DBA0FDC00C98F47 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		215E23911DBA106000C98F47 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		215E23931DBA108E00C98F47 /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
@@ -277,8 +278,11 @@
 		21F2753D1DC34C2A000DF8E8 /* RecommendStrategyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendStrategyViewController.swift; sourceTree = "<group>"; };
 		21F2753F1DC34C43000DF8E8 /* RecommendVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendVideoViewController.swift; sourceTree = "<group>"; };
 		21F4548D1DCCAF0700A8F9E4 /* BaseBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBarViewController.swift; sourceTree = "<group>"; };
-		21F4548F1DCCB51500A8F9E4 /* GroundFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundFocusView.swift; sourceTree = "<group>"; };
 		21FE73EB1DD051EA00765181 /* YSZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoomView.swift; sourceTree = "<group>"; };
+		21FE73F11DD06D3B00765181 /* GroundFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundFocusView.swift; sourceTree = "<group>"; };
+		21FE73F31DD06FB500765181 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		21FE73F51DD0717B00765181 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		21FE73F71DD0719100765181 /* FriendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
 		21FFDE141DBA087C00B6CDE8 /* zhangyoubao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangyoubao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFDE171DBA087C00B6CDE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21FFDE191DBA087C00B6CDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1043,7 +1047,6 @@
 		215E23131DBA0E7200C98F47 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				21F4548F1DCCB51500A8F9E4 /* GroundFocusView.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1058,6 +1061,7 @@
 		215E23151DBA0E7200C98F47 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				21FE73F11DD06D3B00765181 /* GroundFocusView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1105,8 +1109,9 @@
 		215E23201DBA0E7200C98F47 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				215E23211DBA0E7200C98F47 /* Friends */,
+				21FE73ED1DD06AE400765181 /* main */,
 				215E23261DBA0E7200C98F47 /* Message */,
+				215E23211DBA0E7200C98F47 /* Friends */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -1146,6 +1151,7 @@
 		215E23251DBA0E7200C98F47 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				21FE73F71DD0719100765181 /* FriendView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1171,7 +1177,6 @@
 		215E23281DBA0E7200C98F47 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				215E238B1DBA0FBF00C98F47 /* MessageViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1186,6 +1191,7 @@
 		215E232A1DBA0E7200C98F47 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				21FE73F51DD0717B00765181 /* MessageView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1652,6 +1658,38 @@
 			path = YSZoomView;
 			sourceTree = "<group>";
 		};
+		21FE73ED1DD06AE400765181 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				21FE73EE1DD06AE400765181 /* controller */,
+				21FE73EF1DD06AE400765181 /* model */,
+				21FE73F01DD06AE400765181 /* view */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		21FE73EE1DD06AE400765181 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				21FE73F31DD06FB500765181 /* MessageViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		21FE73EF1DD06AE400765181 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		21FE73F01DD06AE400765181 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		21FFDE0B1DBA087C00B6CDE8 = {
 			isa = PBXGroup;
 			children = (
@@ -1980,11 +2018,14 @@
 				215E239A1DBA13B100C98F47 /* MainTabBarViewController.swift in Sources */,
 				21FFDE201DBA087C00B6CDE8 /* zhangyoubao.xcdatamodeld in Sources */,
 				21E604A41DC88D94001B78C3 /* StoryViewController.swift in Sources */,
+				21FE73F81DD0719100765181 /* FriendView.swift in Sources */,
 				21F275351DC346C7000DF8E8 /* CollectionView+ScrollView.swift in Sources */,
 				215E23961DBA10F400C98F47 /* UILable+Common.swift in Sources */,
 				2101719C1DCB284C00118883 /* GroundViewController.swift in Sources */,
 				214C43BE1DC88CF400C0AB3A /* GameVideoViewController.swift in Sources */,
+				21FE73F21DD06D3B00765181 /* GroundFocusView.swift in Sources */,
 				215E23981DBA11C900C98F47 /* UIButton+Common.swift in Sources */,
+				21FE73F41DD06FB500765181 /* MessageViewController.swift in Sources */,
 				215B9BD01DC1EF0100AB3ED8 /* RecommendCell.swift in Sources */,
 				21F275361DC346C7000DF8E8 /* PageTitleViewController.swift in Sources */,
 				21EDD7A71DCA071100C8EBB7 /* RefreshProtocol.swift in Sources */,
@@ -1995,6 +2036,7 @@
 				2125340A1DC43D1E00707BA8 /* SubRecommendViewController.swift in Sources */,
 				214C43811DC88A9300C0AB3A /* RoleStrategyViewController.swift in Sources */,
 				210171A11DCB29A700118883 /* GroundHotView.swift in Sources */,
+				21FE73F61DD0717B00765181 /* MessageView.swift in Sources */,
 				21E67DFF1DC21964003CD249 /* RecommendNewestViewController.swift in Sources */,
 				21E67E0A1DC222B7003CD249 /* NavigationProtocol.swift in Sources */,
 				215B9BD51DC1EF6200AB3ED8 /* RecommendModel.swift in Sources */,
@@ -2015,8 +2057,6 @@
 				21F2753E1DC34C2A000DF8E8 /* RecommendStrategyViewController.swift in Sources */,
 				215E238E1DBA0FDC00C98F47 /* ProfileViewController.swift in Sources */,
 				21F2753A1DC34BF5000DF8E8 /* RecommendEntertainViewController.swift in Sources */,
-				215E238C1DBA0FBF00C98F47 /* MessageViewController.swift in Sources */,
-				21F454901DCCB51500A8F9E4 /* GroundFocusView.swift in Sources */,
 				21E6049C1DC88D20001B78C3 /* EquipmentViewController.swift in Sources */,
 				21BC06A41DBE2668008893B1 /* ZYBDownload.swift in Sources */,
 				215E23921DBA106000C98F47 /* Const.swift in Sources */,
