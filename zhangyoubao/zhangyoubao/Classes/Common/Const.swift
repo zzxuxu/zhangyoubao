@@ -92,6 +92,12 @@ public let RecUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=recomme
 //api=recommend.list&apiVersion=v1&deviceId=e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D&game=dnf&nonce=735605&os=ios&osVersion=8.1.2&params%5BlastId%5D=0&params%5BtagId%5D=495&platform=DNF&platformVersion=40020001&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&secretSignature=AbBJvcSF8rglBu8Q2x8rPGCXwQc%3D&secretVersion=v1.0&sign=sfsfsfsfs&time=1477294802&userId=&userToken=
 
 
+//推荐——subView
+
+//URL	http://dnf.service.zhangyoubao.com/service/rest?api=news.getbyid&game=dnf&platformVersion=40020101&userid=
+
+public let SubUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=news.getbyid&game=dnf&platformVersion=40020101&userid="
+
 
 //发现——职业攻略
 
@@ -121,7 +127,12 @@ public let RecUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=recomme
 //api=dynamic.getfrontdynamictopic&apiVersion=v1&deviceId=e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D&game=dnf&nonce=278143&os=ios&osVersion=8.1.2&params%5BdynamicTopicId%5D=&params%5Bsort%5D=&platform=DNF&platformVersion=40020001&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&secretSignature=zAMIpfglDC%2B1WrdDTwhlexls1ek%3D&secretVersion=v1.0&sign=sfsfsfsfs&time=1477300166&userId=&userToken=
 
 //广场——热门 内容
-//URL	http://dnf.service.zhangyoubao.com/service/rest?api=dynamic.getsquarehotlist&game=dnf&platformVersion=40020001&userid=
+public let groundHotUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=dynamic.getsquarehotlist&game=dnf&platformVersion=40020101&userid="
+
+
+public let groundMomentUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=dynamic.getcurrentlist&game=dnf&platformVersion=40020101&userid="
+
+public let groundFocusUrl = "http://dnf.service.zhangyoubao.com/service/rest?api=dynamic.getsquarerecommendlist&game=dnf&platformVersion=40020101&userid="
 
 //请求头
 //api=dynamic.getsquarehotlist&apiVersion=v1&deviceId=e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D&game=dnf&nonce=709095&os=ios&osVersion=8.1.2&params%5BpageSize%5D=20&params%5Bsort%5D=0&params%5BtagsFilter%5D=0&platform=DNF&platformVersion=40020001&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&secretSignature=JQsOzJE5qNfOH6SetyrhromHThY%3D&secretVersion=v1.0&sign=sfsfsfsfs&time=1477300167&userId=&userToken=

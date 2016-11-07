@@ -8,12 +8,12 @@
 
 import UIKit
 
-class RecommendEntertainViewController: UIViewController {
+class RecommendEntertainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.grayColor()
+//        view.backgroundColor = UIColor.grayColor()
 
         // Do any additional setup after loading the view.
     }

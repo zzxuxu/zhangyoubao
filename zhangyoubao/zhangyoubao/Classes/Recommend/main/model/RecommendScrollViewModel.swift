@@ -30,10 +30,17 @@ import UIKit
 //}
 
 class RecommendScrollViewModel:NSObject {
-    var id:String?
+    var scrId:String?
     var image_url:String?
     var redirect_data:String?
     var redirect_type:String?
+
+    override func setValue(value: AnyObject?, forKey key: String) {
+        super.setValue(value, forKey: key)
+        if key == "id"{
+            scrId = value as? String
+        }
+    }
 
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
 

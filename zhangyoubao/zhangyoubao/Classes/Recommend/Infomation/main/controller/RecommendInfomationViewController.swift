@@ -8,12 +8,12 @@
 
 import UIKit
 
-class RecommendInfomationViewController: UIViewController {
+class RecommendInfomationViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.blueColor()
+//        view.backgroundColor = UIColor.blueColor()
 
         // Do any additional setup after loading the view.
     }

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class RecommendStrategyViewController: UIViewController {
+class RecommendStrategyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.yellowColor()
+//        view.backgroundColor = UIColor.yellowColor()
 
         // Do any additional setup after loading the view.
     }

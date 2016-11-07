@@ -8,11 +8,11 @@
 
 import UIKit
 
-class RecommendVideoViewController: UIViewController {
+class RecommendVideoViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blueColor()
+//        view.backgroundColor = UIColor.blueColor()
 
         // Do any additional setup after loading the view.
     }

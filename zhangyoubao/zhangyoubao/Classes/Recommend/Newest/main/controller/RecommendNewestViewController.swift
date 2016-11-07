@@ -10,29 +10,43 @@ import UIKit
 import Alamofire
 import Kingfisher
 
-class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITableViewDataSource,ScrollViewProtocol {
+var lastId:String!
+
+class RecommendNewestViewController: BaseViewController,UITableViewDelegate, UITableViewDataSource,ScrollViewProtocol,RefreshProtocol {
     var dataArray:[RecommendModel] = []
+    var currentPage = 1
     var scrollArray:[RecommendScrollViewModel] = []
     var tableView:UITableView!
     var scrollView:UIScrollView!
 
+
+    let params = ["api":"recommend.list","apiVersion":"v1","deviceId":"e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D","game":"dnf","nonce":"442947","os":"ios","osVersion":"8.1.2","params%5BlastId%5D":"0","params%5BtagId%5D":"0","platform":"DNF","platformVersion":"40020001","secretId":"AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA","secretSignature":"T2whfm4y3Pksw2Jg1YCi5vKgpa0%3D","secretVersion":"v1.0","sign":"sfsfsfsfs","time":"1477293257","userId":"","userToken":""]
+
+    let RefreshParams = ["api":"recommend.list","apiVersion":"v1","deviceId":"e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D","game":"dnf","nonce":"653513","os":"ios","osVersion":"8.1.2","params%5BlastId%5D":"3099714329429651295","params%5BtagId%5D":"0","platform":"DNF","platformVersion":"40020001","secretId":"AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA","secretSignature":"2wy9mVqlKqPHqYj7qRYjD10xeKQ%3D","secretVersion":"v1.0","sign":"sfsfsfsfs","time":"1477293257","userId":"","userToken":""]
+
+    //=&=&=&=&=&=&=&=&=&=&=&=&=&secretVersion=v1.0&sign=sfsfsfsfs&time=1478089128&userId=&userToken=
+
+
+    //"params%5BlastId%5D":"\(lastId)"
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        loadData()
+        loadScrollViewData()
+        loadData(params)
         configUI()
 
         scrollView=UIScrollView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 150))
-        scrollView.backgroundColor=UIColor.yellowColor()
+//        scrollView.backgroundColor=UIColor.yellowColor()
 
         addScrollView(scrollView)
         scrollAddImage(scrollView)
 
         tableView.tableHeaderView?.addSubview(scrollView)
+
+        
     }
 
-    func loadData() {
-
+    func loadScrollViewData() {
         let jsonString = NSBundle.mainBundle().pathForResource("ScrollView", ofType: "json")
 
         let data = NSData(contentsOfFile: jsonString!)
@@ -45,13 +59,26 @@ class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITab
 
             self.scrollArray.append(model)
         }
-//        print(self.scrollArray[0].image_url)
-//        self.tableView.reloadData()
+        //        print(self.scrollArray[0].image_url)
+        //        self.tableView.reloadData()
+    }
 
-        let params = ["api":"recommend.list","apiVersion":"v1","deviceId":"e1BQ%2BYSBw%2BLg%2BHBUe7lyIsQDSYUigpwm3%2BpBPw5ETHGSvCF4KLfAGMd1esFsKbLHA3x%2BdPIH0SUIagSjRz1bUg%3D%3D","game":"dnf","nonce":"442947","os":"ios","osVersion":"8.1.2","params%5BlastId%5D":"0","params%5BtagId%5D":"0","platform":"DNF","platformVersion":"40020001","secretId":"AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA","secretSignature":"T2whfm4y3Pksw2Jg1YCi5vKgpa0%3D","secretVersion":"v1.0","sign":"sfsfsfsfs","time":"1477293257","userId":"","userToken":""]
+    func loadData(parameters: [String:AnyObject]) {
+
+        //3099529079044942259
+        //3099549125377379817
+        //3099549125377379817
+        //params%5BlastId%5D=3099691652703177058
+
 
         Alamofire.request(.POST, RecUrl, parameters: params, encoding: ParameterEncoding.URL, headers: nil).responseJSON { (response) in
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
+            if self.currentPage == 1{
+                self.dataArray.removeAll()
+            }
             if response.result.error == nil {
+//                print(response.result.value)
                 let dic = response.result.value as! [String:AnyObject]
                     let model = RecommendModel()
                     model.code = dic["code"] as? NSNumber
@@ -65,8 +92,10 @@ class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITab
                     self.dataArray.append(model)
 
                 }
-//                print(self.dataArray[0].data[0].image_urls)
+//                print(self.dataArray[0].data[0].newsId)
                 self.tableView.reloadData()
+                lastId = String((self.dataArray.last?.data.last?.newsId)!)
+                print(lastId)
             }
         }
 
@@ -82,13 +111,27 @@ class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITab
         tableView.dataSource = self
 
         tableView.registerNib(UINib(nibName: "RecommendCell", bundle: nil), forCellReuseIdentifier: "recommendCellId")
-        
+
+//        print(lastId)
+        addRefresh({[unowned self] in
+//            self.currentPage = 1
+            self.loadData(self.params)
+            }, footer: {[unowned self] in
+
+//                self.currentPage += 1
+                self.loadData(self.params)
+            }, tableView: tableView)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+//    override func viewWillAppear(animated: Bool) {
+//        tabBarController?.tabBar.hidden = false
+//    }
 
     // MARK: - Table view data source
 
@@ -124,6 +167,15 @@ class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITab
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let model = dataArray[indexPath.row]
+        let vc = SubRecommendViewController()
+        vc.newsId = model.data[indexPath.row].newsId!
+//        print(model.data[indexPath.row].newsId!)
+//        print("=======")
+//        print(Int(model.data[indexPath.row].newsId!))
+//        print("-------")
+//        print(vc.newsId)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func addheaderView(tabelView:UITableView){
@@ -152,6 +204,7 @@ class RecommendNewestViewController: UIViewController,UITableViewDelegate, UITab
         scrollView.bounces = false
     }
 }
+
 
 
 

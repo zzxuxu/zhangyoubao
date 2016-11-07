@@ -32,7 +32,7 @@ class DataModel:NSObject {
     var essence_type:NSNumber?
     var good_count:NSNumber?
     var has_video:NSNumber?
-    var id:NSNumber?
+    var newsId:NSNumber?
     var image_count:NSNumber?
     var image_urls:NSArray?
     var is_down:NSNumber?
@@ -55,6 +55,13 @@ class DataModel:NSObject {
     var user_id:NSNumber?
     var user_name:String?
     var videos:[VideoModel]=[]
+
+    override func setValue(value: AnyObject?, forKey key: String) {
+        super.setValue(value, forKey: key)
+        if key == "id"{
+            newsId = value as? NSNumber
+        }
+    }
 
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
 

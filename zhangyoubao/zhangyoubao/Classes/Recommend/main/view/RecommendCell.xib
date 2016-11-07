@@ -103,7 +103,7 @@
                 <outlet property="appVideo" destination="Kbw-zj-Xw5" id="cVN-Vd-BsY"/>
                 <outlet property="appVideoPic" destination="gBA-9u-Ywf" id="Yao-qX-Qj8"/>
             </connections>
-            <point key="canvasLocation" x="-399.5" y="262"/>
+            <point key="canvasLocation" x="-677.5" y="272"/>
         </tableViewCell>
     </objects>
     <resources>
