@@ -164,7 +164,12 @@ class RecommendNewestViewController: BaseViewController,UITableViewDelegate, UIT
         cell.appComment.text = "\((model.data[indexPath.row].comment_count)!)评"
         cell.appVideoPic.image = UIImage(named: "推荐-视频图标")
         let url = model.data[indexPath.row].recommend_covers![0]
-        cell.appImage.kf_setImageWithURL(NSURL(string: url as! String), placeholderImage: UIImage(named: "albums_default"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
+        if model.data[indexPath.row].recommend_covers?.count > 0{
+            cell.appImage.kf_setImageWithURL(NSURL(string: url as! String), placeholderImage: UIImage(named: "albums_default"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
+        }else {
+            cell.appImage.image = UIImage(named: "albums_default")
+        }
+
         if model.data[indexPath.row].has_video == 1 {
             cell.appVideoPic.hidden = false
             cell.appVideo.hidden = false

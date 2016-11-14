@@ -1,0 +1,256 @@
+[{
+    "name":"独立职业",
+    "pic":"l_dlzy",
+    "data":[
+            {
+            "roleName":"缔造者",
+            "image":"dzz_intro"
+            },
+            {
+            "roleName":"黑暗武士",
+            "image":"hawsn_intro"
+            }
+            ]
+},
+{
+    "name":"魔枪士",
+    "pic":"l_mqs",
+    "data":[
+            {
+            "roleName":"决战者",
+            "image":"jzz_intro"
+            },
+            {
+            "roleName":"征战者",
+            "image":"zzz_intro"
+            }
+            ]
+},
+{
+    "name":"鬼剑士",
+    "pic":"l_gjs_nan",
+    "data":[
+            {
+            "roleName":"鬼泣",
+            "image":"gqn_intro"
+            },
+            {
+            "roleName":"狂战士",
+            "image":"kzsn_intro"
+            },
+            {
+            "roleName":"剑魂",
+            "image":"jhn_intro"
+            },
+            {
+            "roleName":"阿修罗",
+            "image":"axln_intro"
+            }
+            ]
+},
+{
+    "name":"女鬼剑",
+    "pic":"l_gjs_nv",
+    "data":[
+            {
+            "roleName":"驭剑士",
+            "image":"yjsnv_intro"
+            },
+            {
+            "roleName":"契魔者",
+            "image":"qmznv_intro"
+            },
+            {
+            "roleName":"流浪武士",
+            "image":"lljs_intro"
+            },
+            {
+            "roleName":"暗殿骑士",
+            "image":"adqs_intro"
+            }
+            ]
+
+},
+{
+    "name":"男格斗",
+    "pic":"l_gdj_nan",
+    "data":[
+            {
+            "roleName":"男街霸",
+            "image":"jbn_intro"
+            },
+            {
+            "roleName":"男气功师",
+            "image":"qgsn_intro"
+            },
+            {
+            "roleName":"男柔道家",
+            "image":"rdjn_intro"
+            },
+            {
+            "roleName":"男散打",
+            "image":"sdn_intro"
+            }
+            ]
+},
+{
+    "name":"格斗家",
+    "pic":"l_gdj_nv",
+    "data":[
+            {
+            "roleName":"街霸",
+            "image":"jbnv_intro"
+            },
+            {
+            "roleName":"气功师",
+            "image":"qgsnv_intro"
+            },
+            {
+            "roleName":"柔道家",
+            "image":"rdjnv_intro"
+            },
+            {
+            "roleName":"散打",
+            "image":"sdnv_intro"
+            }
+            ]
+},
+{
+    "name":"神枪手",
+    "pic":"l_sqs_nan",
+    "data":[
+            {
+            "roleName":"弹药专家",
+            "image":"dyzjn_intro"
+            },
+            {
+            "roleName":"机械师",
+            "image":"jxsn_intro"
+            },
+            {
+            "roleName":"漫游枪手",
+            "image":"myqsn_intro"
+            },
+            {
+            "roleName":"枪炮师",
+            "image":"qpsn_intro"
+            }
+            ]
+},
+{
+    "name":"女枪手",
+    "pic":"l_sqs_nan",
+    "data":[
+            {
+            "roleName":"女弹药",
+            "image":"dyzjnv_intro"
+            },
+            {
+            "roleName":"女机械师",
+            "image":"jxsnv_intro"
+            },
+            {
+            "roleName":"女漫游",
+            "image":"myqsnv_intro"
+            },
+            {
+            "roleName":"女枪炮",
+            "image":"qpsnv_intro"
+            }
+            ]
+},
+{
+    "name":"男法师",
+    "pic":"l_mfs_nan",
+    "data":[
+            {
+            "roleName":"冰结师",
+            "image":"bjsn_intro"
+            },
+            {
+            "roleName":"元素爆破",
+            "image":"ysbpsn_intro"
+            }
+            ]
+},
+{
+    "name":"魔法师",
+    "pic":"l_mfs_nv",
+    "data":[
+            {
+            "roleName":"魔道学者",
+            "image":"mdxznv_intro"
+            },
+            {
+            "roleName":"元素师",
+            "image":"yssnv_intro"
+            },
+            {
+            "roleName":"战斗法师",
+            "image":"zdfsnv_intro"
+            },
+            {
+            "roleName":"召唤师",
+            "image":"zhsnv_intro"
+            }
+            ]
+},
+{
+    "name":"圣职者",
+    "pic":"l_szz",
+    "data":[
+            {
+            "roleName":"蓝拳圣使",
+            "image":"lqssn_intro"
+            },
+            {
+            "roleName":"驱魔师",
+            "image":"qmsn_intro"
+            },
+            {
+            "roleName":"圣骑士",
+            "image":"sqsn_intro"
+            },
+            {
+            "roleName":"复仇者",
+            "image":"fczn_intro"
+            }
+            ]
+},
+{
+    "name":"暗夜使者",
+    "pic":"l_aysz",
+    "data":[
+            {
+            "roleName":"刺客",
+            "image":"cknv_intro"
+            },
+            {
+            "roleName":"死灵术士",
+            "image":"slssnv_intro"
+            },
+            {
+            "roleName":"忍者",
+            "image":"rz_intro"
+            },
+            {
+            "roleName":"影舞者",
+            "image":"ywz_intro"
+            }
+            ]
+ },
+ {
+ "name":"守护者",
+ "pic":"l_shz_nv",
+ "data":[
+         {
+         "roleName":"精灵骑士",
+         "image":"jlqs_intro"
+         },
+         {
+         "roleName":"混沌魔灵",
+         "image":"hdqs_intro"
+         }
+         ]
+ }
+]
